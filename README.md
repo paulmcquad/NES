@@ -21,8 +21,9 @@ Addons / Extensions:
 
 ## NES Formats
 
-* [NES Image format](https://www.nesmakers.com/index.php?threads/getting-graphics-in-an-nes-ready-format-for-those-not-in-the-beta.189/) - (.chr)
+* [NES Graphics format](https://www.nesmakers.com/index.php?threads/getting-graphics-in-an-nes-ready-format-for-those-not-in-the-beta.189/) - (.chr) -  2BPP (2 Bit per Pixel) Format
 * [NES Sound Format](https://fceux.com/web/help/NSFFormat.html) - (.nsf/.nsfe)
+
 
 ## Youtube Videos
 
@@ -40,9 +41,13 @@ List of Websites for coding:
 * [Nesdev Wiki](https://www.nesdev.org/wiki/Nesdev_Wiki)
 * [Nesdev Forums](https://forums.nesdev.org/index.php)
 * [Nesmakers Forum](https://www.nesmakers.com/index.php)
+* [RomHacking.net](https://www.romhacking.net/)
 
 ## Tutorial Series
 
+* [NES Starter Kit](https://cppchriscpp.github.io/nes-starter-kit/)
+* [NES Ebook](https://bugzmanov.github.io/nes_ebook/)
+* [Nerdy Nights Mirror](https://nerdy-nights.nes.science/)
 ## External Links
 
 * [Nintendo Entertainment System Documentation](https://www.nesdev.org/NESDoc.pdf)
