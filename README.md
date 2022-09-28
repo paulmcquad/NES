@@ -21,7 +21,7 @@ Addons / Extensions:
 
 ## NES Formats
 
-* NES Image format - (.chr)
+* [NES Image format](https://www.nesmakers.com/index.php?threads/getting-graphics-in-an-nes-ready-format-for-those-not-in-the-beta.189/) - (.chr)
 * [NES Sound Format](https://fceux.com/web/help/NSFFormat.html) - (.nsf/.nsfe)
 
 ## Youtube Videos
@@ -37,11 +37,15 @@ List of Github Users:
 List of Websites for coding:
 
 * [Nesdev](https://www.nesdev.org/)
+* [Nesdev Wiki](https://www.nesdev.org/wiki/Nesdev_Wiki)
 * [Nesdev Forums](https://forums.nesdev.org/index.php)
 * [Nesmakers Forum](https://www.nesmakers.com/index.php)
 
+## Tutorial Series
+
 ## External Links
 
+* [Nintendo Entertainment System Documentation](https://www.nesdev.org/NESDoc.pdf)
 * [6502 Instruction Set](https://www.masswerk.at/6502/6502_instruction_set.html): - CPU Opcodes/ Machine Language
 * [6502 microprocessor resource](http://6502.org/): - is a resource for people interested in building hardware or writing software for the 6502 microprocessor and its relatives.
 * [Visual Transistor-level Simulation
