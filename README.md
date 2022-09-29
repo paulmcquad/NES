@@ -12,7 +12,7 @@ Function / Repository/ Tool
 
 * **Code Editor**: (AUR) [Visual Studio Code](https://code.visualstudio.com/)
 * **Assembler**: (AUR) [cc65](https://cc65.github.io/) - powerful macro **assembler**, a C compiler, linker, librarian and several other tools.
-* **Emulator**: (Community) [fceux](https://github.com/TASEmulators/fceux) - Nintendo Entertainment System (NES), Famicom, Famicom Disk System (FDS), and Dendy **emulator**. 
+* **Emulator/ Debugger/ Hex Editor/ PPU Viewer**: (Community) [fceux](https://github.com/TASEmulators/fceux) - Nintendo Entertainment System (NES), Famicom, Famicom Disk System (FDS), and Dendy **emulator**. 
 * **Music Editor**: (AUR) [FamiStudio](https://famistudio.org/) - very simple **music editor** for the Nintendo Entertainment System or Famicom. It is targeted at both chiptune artists and NES homebrewers.
 
 Addons / Extensions:
