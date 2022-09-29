@@ -30,6 +30,8 @@ Addons / Extensions:
 * [NES Development Environment](https://www.youtube.com/watch?v=RtY5FV5TrIU) - setup a basic NES Development Environment on Windows 10.
 * [Basics - 6502 Assembly Crash Course 01](https://www.youtube.com/watch?v=yEiNs7pKNh8) - how to program low level 6502 assembly for NES games.
 
+* [Programmer Dan - NES Programming](https://www.youtube.com/playlist?list=PLnjAJ75A-OrDWPcVzIB63cqsRCLHJd80E)
+
 ## Source Code Repositories
 List of Github Users:
 * [NesHacker](https://github.com/NesHacker)
