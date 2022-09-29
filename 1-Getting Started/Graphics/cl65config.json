@@ -1,0 +1,5 @@
+{
+  "executable": "/usr/bin/cl65",
+  "input": "paul.s",
+  "params": "--verbose --target nes -o paul.nes"
+}
