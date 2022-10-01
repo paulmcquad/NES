@@ -45,6 +45,11 @@ List of Websites for coding:
 * [Nesmakers Forum](https://www.nesmakers.com/index.php)
 * [RomHacking.net](https://www.romhacking.net/)
 
+List of Websites for Sound:
+
+* [VGMusic](https://www.vgmusic.com/music/console/nintendo/nes/)
+* [BitMidi](https://bitmidi.com/)
+
 ## Tutorial Series
 
 * [NES Starter Kit](https://cppchriscpp.github.io/nes-starter-kit/)
