@@ -19,22 +19,36 @@
 ; Main code segement for the program
 .segment "CODE"
 
+PPU_CTRL_REG1 = $2000
+PPU_CTRL_REG2 = $2001
+PPU_STATUS = $2002
+PPU_SPR_ADDR = $2003
+PPU_SPR_DATA = $2004
+PPU_ADDRESS = $2006
+PPU_DATA = $2007
+
+
+
+SND_DELTA_REG = $4010
+JOYPAD_PORT2 = $4017
+
+
 reset:
   sei		; disable IRQs
   cld		; disable decimal mode
   ldx #$40
-  stx $4017	; disable APU frame IRQ
+  stx JOYPAD_PORT2	; disable APU frame IRQ
   ldx #$ff 	; Set up stack
   txs		;  .
   inx		; now X = 0
-  stx $2000	; disable NMI
-  stx $2001 	; disable rendering
-  stx $4010 	; disable DMC IRQs
+  stx PPU_CTRL_REG1	; disable NMI
+  stx PPU_CTRL_REG2 	; disable rendering
+  stx SND_DELTA_REG	; disable DMC IRQs
 
 ;; first wait for vblank to make sure PPU is ready
-vblankwait1:
-  bit $2002
-  bpl vblankwait1
+@vblankwait1:
+  bit PPU_STATUS
+  bpl @vblankwait1
 
 clear_memory:
   lda #$00
@@ -50,39 +64,39 @@ clear_memory:
   bne clear_memory
 
 ;; second wait for vblank, PPU is ready after this
-vblankwait2:
-  bit $2002
-  bpl vblankwait2
+@vblankwait2:
+  bit PPU_STATUS
+  bpl @vblankwait2
 
 main:
 load_palettes:
-  lda $2002
+  lda PPU_STATUS
   lda #$3f
-  sta $2006
+  sta PPU_ADDRESS
   lda #$00
-  sta $2006
+  sta PPU_ADDRESS
   ldx #$00
 @loop:
   lda palettes, x
-  sta $2007
+  sta PPU_DATA
   inx
   cpx #$20
   bne @loop
 
 enable_rendering:
   lda #%10000000	; Enable NMI
-  sta $2000
+  sta PPU_CTRL_REG1
   lda #%00010000	; Enable Sprites
-  sta $2001
+  sta PPU_CTRL_REG2
 
 forever:
   jmp forever
 
 nmi:
   ldx #$00 	; Set SPR-RAM address to 0
-  stx $2003
+  stx PPU_SPR_ADDR
 @loop:	lda hello, x 	; Load the hello message into SPR-RAM
-  sta $2004
+  sta PPU_SPR_DATA
   inx
   cpx #$1c
   bne @loop
